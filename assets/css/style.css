@@ -1,41 +1,109 @@
+html,body {
+  height:100%;
+  min-height:100%;
+  max-height:100%;
+  overflow-y: hidden;
+  background-color: #fff6f5;
+}
 .container {
-    position: relative;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 35px;
-    text-align: center;
+    display: grid; /*Adds grid layout for specific allocation of space*/
+    grid-template-columns: repeat(12, 1fr); /**/
+    gap: 20px;
+
+}
+#instructions {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 12;
+}
+#button1, #button4, #button7 {
+    grid-column: 6 / span 2;
+}
+#button2, #button5, #button8 {
+    grid-column: 7 / span 2;
+}
+#button3, #button6, #button9 {
+    grid-column: 8 / span 2;
+}
+#button1, #button2, #button3 {
+    grid-row: 1 / span 1;
+}
+#button4, #button5, #button6 {
+    grid-row: 2 / span 1;
+}
+#button7, #button8, #button9 {
+    grid-row: 3 / span 1;
 }
 
+#score {
+    grid-column: 6 / span 3;
+    grid-row: 6 / span 1;
+}
+#leaderboards {
+    grid-column: 10 / span 2;
+    grid-row: 1 / span 12;
+}
+#new-game {
+    grid-column: 6 / span 3;
+    grid-row: 9 / span 2;
+}
 .scorebox {
     border-radius: 25%;
     box-sizing: border-box;
-    position: absolute;
+    position: flex-end;
     background-color: #E6ECF0;
     height: 80px;
     width: 80px;
-    top: 210px;
-    left: 210px;
     text-align: center;
-    color: #445261;
+    color: #574240;
     font-size: 3em;
+    margin: 15px;
+    margin-left: 165px;
     padding-top: 10px;
+    justify-content: space-around;
+
 }
 
 .button {
     background-color: #FF5A60;
     color: #FFF;
     border: 0;
-    height: 40px;
-    width: 160px;
+    height: 60px;
+    width: 200px;
     border-radius: 5px;
-    margin: 0 auto;
-    display: block;
-    top: 550px;
-    position: relative;
+    margin: 20px 0 0 100px;
     font-weight: 600;
+    font-size: 1.5em;
 }
 
 .light {
     opacity: 0.4;
+}
+.square {
+    display: flex;
+    place-items: center;
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: #574240;
+}
+#game-title {
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    font-size: 4em;
+    color: #333;
+    margin: 20px 25px 80px 0;
+    justify-content: center;
+}
+details {
+    margin-left: 25px;
+}
+summary {
+    font-size:1.5em;
+    width:700px;
+}
+#instructions p {
+    margin-left: 25px;
+    font-size: 1.5em;
+    width: 300px;
 }
