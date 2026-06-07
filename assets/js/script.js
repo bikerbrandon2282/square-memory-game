@@ -5,15 +5,15 @@ let game = {
   turnNumber: 0,
   turnInProgress: false,
   lastButton: "",
-  choices: ["button1", "button2", "button3", "button4"],
+  choices: ["button1", "button2", "button3", "button4", "button5", "button6", "button7", "button8", "button9"],
 };
 function newGame() {
   game.score = 0;
   game.currentGame = [];
   game.playerMoves = [];
-  for (let circle of document.getElementsByClassName("circle")) {
-    if (circle.getAttribute("data-listener") !== "true") {
-      circle.addEventListener("click", (e) => {
+  for (let square of document.getElementsByClassName("square")) {
+    if (square.getAttribute("data-listener") !== "true") {
+      square.addEventListener("click", (e) => {
         if(game.currentGame.length > 0 && !game.turnInProgress) {
           let move = e.target.getAttribute("id");
           game.lastButton = move;
@@ -23,20 +23,20 @@ function newGame() {
         }
       });
     };
-    circle.setAttribute("data-listener", "true");
+    square.setAttribute("data-listener", "true");
   };
   showScore();
   addTurn();
 }
 function addTurn() {
   game.playerMoves = [];
-  game.currentGame.push(game.choices[Math.floor(Math.random() * 4)]);
+  game.currentGame.push(game.choices[Math.floor(Math.random() * 9)]);
   showTurns();
 }
-function lightsOn(circ) {
-  document.getElementById(circ).classList.add("light");
+function lightsOn(move) {
+  document.getElementById(move).classList.add("light");
   setTimeout(() => {
-    document.getElementById(circ).classList.remove("light");
+    document.getElementById(move).classList.remove("light");
   }, 400);
 }
 function showScore() {
