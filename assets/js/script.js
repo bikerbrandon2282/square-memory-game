@@ -83,8 +83,10 @@ function playerTurn() {
    else {
     game.tryCount--;
     showTryCount();
+    /* If statement checks if player has any lives left before it decides to stop the game 
+    and display Leaderboard score or give them a chance to try again */
     if (game.tryCount === 0) {
-      document.getElementById("lastScore").innerText = "Last Score: " + game.score;
+      document.getElementById("lastScore").innerHTML = `<i class="fa-solid fa-star"></i> ${game.score}`;
       alert("Game Over! Your score was: " + game.score);
       newGame();
     }
