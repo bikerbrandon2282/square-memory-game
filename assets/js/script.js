@@ -1,6 +1,6 @@
 let game = {
   score: 0,
-  tryCount: 0,
+  tryCount: 3,
   currentGame: [],
   playerMoves: [],
   turnNumber: 0,
@@ -31,6 +31,9 @@ function newGame() {
   showTryCount();
   addTurn();
 }
+/**
+ * Adds a new turn to the game by generating a random choice and displaying the sequence of turns to the player.
+ */
 function addTurn() {
   game.playerMoves = [];
   game.currentGame.push(game.choices[Math.floor(Math.random() * 9)]);
@@ -45,6 +48,9 @@ function lightsOn(move) {
 function showScore() {
   document.getElementById("score").innerText = game.score;
 }
+/**
+ * Displays the current number of tries left for the player in the game interface.
+ */
 function showTryCount() {
   document.getElementById("tryCount").innerText = game.tryCount;
 }
@@ -71,9 +77,12 @@ function playerTurn() {
     }
   }
    else {
-    alert("Wrong move!");
     game.tryCount--;
     showTryCount();
-    newGame();
+    game.tryCount === 0 ? alert("Game Over!") && newGame() : null;
+    alert("Wrong move!");
+    game.playerMoves = [];
+    showTurns();
+    playerTurn();
   }
 }

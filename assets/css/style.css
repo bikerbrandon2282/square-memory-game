@@ -45,6 +45,7 @@ html,body {
 #leaderboards {
     grid-column: 10 / span 2;
     grid-row: 1 / span 12;
+    font-size: 1.5em;
 }
 #new-game {
     grid-column: 6 / span 3;
