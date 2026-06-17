@@ -83,10 +83,16 @@ function playerTurn() {
    else {
     game.tryCount--;
     showTryCount();
-    game.tryCount === 0 ? alert("Game Over!") && newGame() : null;
-    alert("Wrong move!");
-    game.playerMoves = [];
-    showTurns();
-    playerTurn();
+    if (game.tryCount === 0) {
+      document.getElementById("lastScore").innerText = "Last Score: " + game.score;
+      alert("Game Over! Your score was: " + game.score);
+      newGame();
+    }
+    else{
+      alert("Wrong move!");
+      game.playerMoves = [];
+      showTurns();
+      playerTurn();
+    }
   }
 }
