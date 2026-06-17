@@ -35,7 +35,11 @@ html,body {
 }
 
 #score {
-    grid-column: 6 / span 3;
+    grid-column: 6 / span 2;
+    grid-row: 6 / span 1;
+}
+#tryCount {
+    grid-column: 7 / span 2;
     grid-row: 6 / span 1;
 }
 #leaderboards {

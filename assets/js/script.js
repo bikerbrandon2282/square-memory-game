@@ -1,5 +1,6 @@
 let game = {
   score: 0,
+  tryCount: 0,
   currentGame: [],
   playerMoves: [],
   turnNumber: 0,
@@ -9,6 +10,7 @@ let game = {
 };
 function newGame() {
   game.score = 0;
+  game.tryCount = 3;
   game.currentGame = [];
   game.playerMoves = [];
   for (let square of document.getElementsByClassName("square")) {
@@ -26,6 +28,7 @@ function newGame() {
     square.setAttribute("data-listener", "true");
   };
   showScore();
+  showTryCount();
   addTurn();
 }
 function addTurn() {
@@ -41,6 +44,9 @@ function lightsOn(move) {
 }
 function showScore() {
   document.getElementById("score").innerText = game.score;
+}
+function showTryCount() {
+  document.getElementById("tryCount").innerText = game.tryCount;
 }
 function showTurns() {
   game.turnInProgress = true;
@@ -60,11 +66,14 @@ function playerTurn() {
     if (game.playerMoves.length === game.currentGame.length) {
       game.score++;
       showScore();
+      showTryCount();
       addTurn();
     }
   }
    else {
     alert("Wrong move!");
+    game.tryCount--;
+    showTryCount();
     newGame();
   }
 }
