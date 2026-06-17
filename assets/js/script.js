@@ -8,6 +8,10 @@ let game = {
   lastButton: "",
   choices: ["button1", "button2", "button3", "button4", "button5", "button6", "button7", "button8", "button9"],
 };
+setTimeout(() => {
+  alert("This game is still in development, The leaderboards will only show the last players score.");
+  alert("Welcome to the Square Memory Game! Click 'New Game' to start playing. You have 3 tries to match the sequence of squares. Good luck!");
+}, 500);
 function newGame() {
   game.score = 0;
   game.tryCount = 3;
