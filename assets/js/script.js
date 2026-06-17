@@ -12,6 +12,9 @@ setTimeout(() => {
   alert("This game is still in development, The leaderboards will only show the last players score.");
   alert("Welcome to the Square Memory Game! Click 'New Game' to start playing. You have 3 tries to match the sequence of squares. Good luck!");
 }, 500);
+/**
+ * Main game function that initializes the game state, sets up event listeners for the squares, and starts a new game.
+ */
 function newGame() {
   game.score = 0;
   game.tryCount = 3;
@@ -43,12 +46,18 @@ function addTurn() {
   game.currentGame.push(game.choices[Math.floor(Math.random() * 9)]);
   showTurns();
 }
+/**
+ * Lights up a square on the game board for a brief period of time to indicate the next move.
+ */
 function lightsOn(move) {
   document.getElementById(move).classList.add("light");
   setTimeout(() => {
     document.getElementById(move).classList.remove("light");
   }, 400);
 }
+/**
+ * Displays the current score of the player in the game interface.
+ */
 function showScore() {
   document.getElementById("score").innerText = game.score;
 }
@@ -70,6 +79,9 @@ function showTurns() {
     }
   }, 800);
 }
+/**
+ * Checks the player's moves against the current game sequence and updates the score or try count accordingly. If the player makes a wrong move, it alerts them and either ends the game or allows them to try again.
+ */
 function playerTurn() {
   let i = game.playerMoves.length - 1;
   if (game.playerMoves[i] === game.currentGame[i]) {
