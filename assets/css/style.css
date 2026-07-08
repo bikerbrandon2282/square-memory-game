@@ -16,13 +16,13 @@ html,body {
     grid-row: 1 / span 12;
 }
 #button1, #button4, #button7 {
-    grid-column: 6 / span 2;
+    grid-column: 5 / span 1;
 }
 #button2, #button5, #button8 {
-    grid-column: 7 / span 2;
+    grid-column: 6 / span 1;
 }
 #button3, #button6, #button9 {
-    grid-column: 8 / span 2;
+    grid-column: 7 / span 1;
 }
 #button1, #button2, #button3 {
     grid-row: 1 / span 1;
@@ -35,11 +35,11 @@ html,body {
 }
 
 #score {
-    grid-column: 6 / span 2;
+    grid-column: 6 / span 1;
     grid-row: 6 / span 1;
 }
 #tryCount {
-    grid-column: 7 / span 2;
+    grid-column: 7 / span 1;
     grid-row: 6 / span 1;
 }
 #leaderboards {
@@ -48,13 +48,14 @@ html,body {
     font-size: 1.5em;
 }
 #new-game {
-    grid-column: 6 / span 3;
+    grid-column: 5 / span 3;
     grid-row: 9 / span 2;
+    justify-self: center;
 }
 .scorebox {
     border-radius: 25%;
     box-sizing: border-box;
-    position: flex-end;
+    justify-self: center;
     background-color: #E6ECF0;
     height: 80px;
     width: 80px;
@@ -62,10 +63,8 @@ html,body {
     color: #574240;
     font-size: 3em;
     margin: 15px;
-    margin-left: 165px;
     padding-top: 10px;
-    justify-content: space-around;
-
+*/
 }
 
 .button {
@@ -86,7 +85,7 @@ html,body {
 .square {
     display: flex;
     place-items: center;
-    margin: 5px;
+    justify-self: center;
     height: 100px;
     width: 100px;
     border-radius: 25%;
