@@ -59,13 +59,13 @@ function lightsOn(move) {
  * Displays the current score of the player in the game interface.
  */
 function showScore() {
-  document.getElementById("score").innerText = game.score;
+  document.getElementById("score").innerText = `Score: ${game.score}`;
 }
 /**
  * Displays the current number of tries left for the player in the game interface.
  */
 function showTryCount() {
-  document.getElementById("tryCount").innerText = game.tryCount;
+  document.getElementById("tryCount").innerText = `Tries: ${game.tryCount}`;
 }
 function showTurns() {
   game.turnInProgress = true;
