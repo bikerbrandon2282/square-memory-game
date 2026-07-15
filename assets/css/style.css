@@ -2,6 +2,7 @@ html,body {
   height:100%;
   min-height:100%;
   max-height:100%;
+  max-width:100%;
   overflow-y: auto;
   background-color: #fff6f5;
 }
@@ -87,7 +88,7 @@ html,body {
     grid-row: 4 / span 1;
 }
 #leaderboards {
-    grid-column: 10 / span 2;
+    grid-column: 8 / span 3;
     grid-row: 1 / span 12;
     font-size: 1.5em;
 }
@@ -99,8 +100,8 @@ html,body {
 #hiddenBox {
     grid-column: 5 / span 1;
     grid-row: 4 / span 1;
-    height: 80px;
-    width: 180px;
+    height: 60px;
+    width: 120px;
     opacity: 0;
 }
 .scorebox {
@@ -108,11 +109,11 @@ html,body {
     box-sizing: border-box;
     justify-self: center;
     background-color: #E6ECF0;
-    height: 80px;
-    width: 180px;
+    height: 60px;
+    width: 120px;
     text-align: center;
     color: #574240;
-    font-size: 3em;
+    font-size: 2em;
     margin: 15px;
     padding-top: 10px;
 }
@@ -136,8 +137,8 @@ html,body {
     display: flex;
     place-items: center;
     justify-self: center;
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     border-radius: 25%;
     background-color: #574240;
 }
@@ -158,23 +159,23 @@ summary {
 }
 #instructions p {
     margin-left: 25px;
-    font-size: 1.5em;
+    font-size: 1em;
     width: 300px;
 }
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     #game-title {
-        font-size: 3em;
+        font-size: 2em;
     }
     .container {
-        grid-template-columns: repeat(6, 0.5fr);
-        grid-template-rows: repeat(8, 0.5fr);
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(8, 1fr);
         gap: 10px;
     }
     #instructions {
         grid-column: 1 / span 6;
-        grid-row: 1 / span 3;
+        grid-row: 1 / span 2;
     }
     #button1, #button4, #button7 {
         grid-column: 2 / span 1;
@@ -208,7 +209,7 @@ summary {
         grid-row: 7 / span 1;
     }
     #leaderboards {
-        grid-column: 1 / span 2;
+        grid-column: 1 / span 6;
         grid-row: 3 / span 2;
         font-size: 1.2em;
     }
