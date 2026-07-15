@@ -1,6 +1,6 @@
 
 /* Dialog Modal that waits for the pageto finish loading then outputs a message with the instructions to get the player started*/
-window.addEventListener('DOMContentLoaded', () => {
+
 // Get the modal
 var modal = document.getElementById("instructionsModal");
 modal.style.display = "block";
@@ -130,5 +130,4 @@ function playerTurn() {
       playerTurn();
     }
   }
-}
-});
+};
