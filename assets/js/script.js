@@ -51,8 +51,8 @@ function newGame() {
         }
       }
       }
-      square.addEventListener('touchstart', handleInteraction, { passive: false });
-      square.addEventListener('click', handleInteraction);
+      square.addEventListener('touchstart', handleClick, { passive: false });
+      square.addEventListener('click', handleClick);
     };
     square.setAttribute("data-listener", "true");
   };
