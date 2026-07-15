@@ -14,6 +14,7 @@ The leaderboards will only show the last players score.
 
   Welcome to the Square Memory Game! Click 'New Game' to start playing. You have 3 tries to match the sequence of squares. Good luck!`);
 }, 500);
+document.getElementById('customAlert').showModal();
 /**
  * Main game function that initializes the game state, sets up event listeners for the squares, and starts a new game.
  */
