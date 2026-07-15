@@ -1,15 +1,23 @@
 
 /* Dialog Modal that waits for the pageto finish loading then outputs a message with the instructions to get the player started*/
 window.addEventListener('DOMContentLoaded', () => {
-  const dialog = document.getElementById('InstructionsDialog');
-  
-  // A 50ms delay gives Chrome Mobile time to render the frame 
-  // and accept modal injection into the top-layer
-  setTimeout(() => {
-    if (dialog && !dialog.open) {
-      dialog.showModal();
-    }
-  }, 50);
+// Get the modal
+var modal = document.getElementById("instructionsModal");
+modal.style.display = "block";
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (Close), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 let game = {
   score: 0,

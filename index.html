@@ -17,13 +17,17 @@
     </head>
 
     <body>
-        <dialog id="InstructionsDialog">
-            <p>This game is still in development, 
-            The leaderboards will only show the last players score.</p>
-            <p>Welcome to the Square Memory Game! Click 'New Game' to start playing.
-            You have 3 tries to match the sequence of squares. Good luck!</p>
-            <button onclick="document.getElementById('InstructionsDialog').close()">OK</button>
-        </dialog>
+        <!-- Inital page load modal -->
+        <div id="instructionsModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">Close</span>
+                <p>This game is still in development, 
+                The leaderboards will only show the last players score.</p>
+                <p>Welcome to the Square Memory Game! Click 'New Game' to start playing.
+                You have 3 tries to match the sequence of squares. Good luck!</p>
+            </div>
+        </div>
         <div>
             <h1 id="game-title">Brandon's Memory Game</h1>
         </div>
