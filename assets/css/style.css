@@ -95,6 +95,8 @@ html,body {
     grid-column: 5 / span 3;
     grid-row: 5 / span 2;
     justify-self: center;
+    /*Tells mobile browsers not to wait for double tap */
+    touch-action: manipulation;
 }
 #hiddenBox {
     grid-column: 5 / span 1;
