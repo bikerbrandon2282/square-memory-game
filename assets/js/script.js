@@ -39,7 +39,7 @@ function newGame() {
   game.playerMoves = [];
   for (let square of document.getElementsByClassName("square")) {
     if (square.getAttribute("data-listener") !== "true") {
-      square.addEventListener("click", (e) => {
+      square.addEventListener("pointerdown", (e) => {
         if(game.currentGame.length > 0 && !game.turnInProgress) {
           let move = e.target.getAttribute("id");
           game.lastButton = move;
