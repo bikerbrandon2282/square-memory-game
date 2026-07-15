@@ -9,8 +9,10 @@ let game = {
   choices: ["button1", "button2", "button3", "button4", "button5", "button6", "button7", "button8", "button9"],
 };
 setTimeout(() => {
-  //alert("This game is still in development, The leaderboards will only show the last players score.");
-  //alert("Welcome to the Square Memory Game! Click 'New Game' to start playing. You have 3 tries to match the sequence of squares. Good luck!");
+  alert(`This game is still in development, 
+The leaderboards will only show the last players score.
+
+  Welcome to the Square Memory Game! Click 'New Game' to start playing. You have 3 tries to match the sequence of squares. Good luck!`);
 }, 500);
 /**
  * Main game function that initializes the game state, sets up event listeners for the squares, and starts a new game.
