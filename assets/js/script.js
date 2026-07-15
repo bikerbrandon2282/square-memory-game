@@ -1,5 +1,7 @@
+
+/* Dialog Modal that waits for the pageto finish loading then outputs a message with the instructions to get the player started*/
 window.addEventListener('DOMContentLoaded', () => {
-  const dialog = document.getElementById('customAlert');
+  const dialog = document.getElementById('InstructionsDialog');
   
   // A 50ms delay gives Chrome Mobile time to render the frame 
   // and accept modal injection into the top-layer
@@ -8,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
       dialog.showModal();
     }
   }, 50);
-});
+
 let game = {
   score: 0,
   tryCount: 3,
@@ -19,12 +21,6 @@ let game = {
   lastButton: "",
   choices: ["button1", "button2", "button3", "button4", "button5", "button6", "button7", "button8", "button9"],
 };
-setTimeout(() => {
-  alert(`This game is still in development, 
-The leaderboards will only show the last players score.
-
-  Welcome to the Square Memory Game! Click 'New Game' to start playing. You have 3 tries to match the sequence of squares. Good luck!`);
-}, 500);
 /**
  * Main game function that initializes the game state, sets up event listeners for the squares, and starts a new game.
  */
@@ -123,3 +119,4 @@ function playerTurn() {
     }
   }
 }
+});

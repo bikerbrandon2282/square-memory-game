@@ -17,14 +17,12 @@
     </head>
 
     <body>
-        <dialog id="customAlert">
-            <p>
-            This game is still in development, 
-            The leaderboards will only show the last players score.
-            Welcome to the Square Memory Game! Click 'New Game' to start playing. 
-            You have 3 tries to match the sequence of squares. Good luck!
-            </p>
-            <button onclick="document.getElementById('customAlert').close()">OK</button>
+        <dialog id="InstructionsDialog">
+            <p>This game is still in development, 
+            The leaderboards will only show the last players score.</p>
+            <p>Welcome to the Square Memory Game! Click 'New Game' to start playing.
+            You have 3 tries to match the sequence of squares. Good luck!</p>
+            <button onclick="document.getElementById('InstructionsDialog').close()">OK</button>
         </dialog>
         <div>
             <h1 id="game-title">Brandon's Memory Game</h1>
