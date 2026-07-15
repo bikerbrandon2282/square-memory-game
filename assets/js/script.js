@@ -38,8 +38,12 @@ function newGame() {
   game.currentGame = [];
   game.playerMoves = [];
   for (let square of document.getElementsByClassName("square")) {
-    if (square.getAttribute("data-listener") !== "true") {
-      square.addEventListener("pointerdown", (e) => {
+    if (square.getAttribute("data-listener") !== "true") { 
+        function handleInteraction(e) {
+          e.preventDefault(); // Prevents double-firing 
+
+          square.addEventListener('touchstart', handleInteraction, { passive: false });
+          square.addEventListener('click', handleInteraction);
         if(game.currentGame.length > 0 && !game.turnInProgress) {
           let move = e.target.getAttribute("id");
           game.lastButton = move;
