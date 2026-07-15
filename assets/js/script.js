@@ -38,12 +38,10 @@ function newGame() {
   game.currentGame = [];
   game.playerMoves = [];
   for (let square of document.getElementsByClassName("square")) {
-    if (square.getAttribute("data-listener") !== "true") { 
-        function handleInteraction(e) {
-          e.preventDefault(); // Prevents double-firing 
-
-          square.addEventListener('touchstart', handleInteraction, { passive: false });
-          square.addEventListener('click', handleInteraction);
+    if (square.getAttribute("data-listener") !== "true") {
+      function handleClick(e) {
+        //Prevents double-firing of event listeners when user clicks on a square
+        {
         if(game.currentGame.length > 0 && !game.turnInProgress) {
           let move = e.target.getAttribute("id");
           game.lastButton = move;
@@ -51,7 +49,10 @@ function newGame() {
           game.playerMoves.push(move);
           playerTurn();
         }
-      });
+      }
+      }
+      square.addEventListener('touchstart', handleInteraction, { passive: false });
+      square.addEventListener('click', handleInteraction);
     };
     square.setAttribute("data-listener", "true");
   };
