@@ -41,7 +41,7 @@ function newGame() {
     if (square.getAttribute("data-listener") !== "true") {
       function handleClick(e) {
         //Prevents double-firing of event listeners when user clicks on a square
-        {
+        e.preventDefault();
         if(game.currentGame.length > 0 && !game.turnInProgress) {
           let move = e.target.getAttribute("id");
           game.lastButton = move;
@@ -49,7 +49,6 @@ function newGame() {
           game.playerMoves.push(move);
           playerTurn();
         }
-      }
       }
       square.addEventListener('touchstart', handleClick, { passive: false });
       square.addEventListener('click', handleClick);
