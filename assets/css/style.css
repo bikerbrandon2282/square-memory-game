@@ -22,6 +22,7 @@ html,body {
 .modal-header {
   padding: 2px 16px;
   background-color: #fff6f5;
+  border: 1px solid #888;
   color: Black;
 }
 /* Modal Content */
