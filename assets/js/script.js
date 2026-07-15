@@ -1,3 +1,14 @@
+window.addEventListener('DOMContentLoaded', () => {
+  const dialog = document.getElementById('customAlert');
+  
+  // A 50ms delay gives Chrome Mobile time to render the frame 
+  // and accept modal injection into the top-layer
+  setTimeout(() => {
+    if (dialog && !dialog.open) {
+      dialog.showModal();
+    }
+  }, 50);
+});
 let game = {
   score: 0,
   tryCount: 3,
@@ -14,7 +25,6 @@ The leaderboards will only show the last players score.
 
   Welcome to the Square Memory Game! Click 'New Game' to start playing. You have 3 tries to match the sequence of squares. Good luck!`);
 }, 500);
-document.getElementById('customAlert').showModal();
 /**
  * Main game function that initializes the game state, sets up event listeners for the squares, and starts a new game.
  */
