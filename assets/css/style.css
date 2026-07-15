@@ -176,12 +176,12 @@ summary {
 }
 @media (max-width: 480px) {
     #game-title {
-        font-size: 2em;
+        font-size: 1.5em;
     } 
     .scorebox {
         height: 60px;
         width: 120px;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .container {
@@ -190,8 +190,8 @@ summary {
         gap: 5px;
     }
     .square {
-        height: 70px;
-        width: 70px;
+        height: 50px;
+        width: 50px;
     }
     #instructions {
         grid-column: 2 / span 4;
