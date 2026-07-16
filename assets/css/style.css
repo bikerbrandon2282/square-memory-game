@@ -1,8 +1,16 @@
+/* Global Styles */
 body {
   height:100vh;
   max-width:100%;
   overflow-y: hidden;
   background-color: #fff6f5;
+}
+details {
+    margin-left: 25px;
+}
+summary {
+    font-size:1.5em;
+    width:700px;
 }
 /* Modal Styles */
 .modal {
@@ -48,15 +56,73 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
 .container {
     display: grid; /*Adds grid layout for specific allocation of space*/
     grid-template-columns: repeat(12, 1fr); /**/
     gap: 50px;
 
 }
+.light {
+    opacity: 0.4;
+}
+.square {
+    display: flex;
+    place-items: center;
+    justify-self: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 25%;
+    background-color: #574240;
+}
+.scorebox {
+    border-radius: 8%;
+    box-sizing: border-box;
+    justify-self: center;
+    background-color: #E6ECF0;
+    height: 60px;
+    width: 120px;
+    text-align: center;
+    color: #574240;
+    font-size: 2em;
+    margin: 15px;
+    padding-top: 10px;
+}
+.button {
+    background-color: #FF5A60;
+    color: #FFF;
+    border: 0;
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+    margin: 20px 0 0 100px;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+#game-title {
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    font-size: 3em;
+    color: #333;
+    margin: 50px 30px 40px 0;
+    justify-content: center;
+}
 #instructions {
     grid-column: 1 / span 3;
     grid-row: 1 / span 12;
+}
+#instructions p {
+    margin-left: 25px;
+    font-size: 1em;
+    width: 300px;
+}
+#leaderboards {
+    grid-column: 8 / span 3;
+    grid-row: 1 / span 12;
+    font-size: 1em;
+}
+#leaderboards h2 {
+    margin: 0 !important;
 }
 #button1, #button4, #button7 {
     grid-column: 5 / span 1;
@@ -76,7 +142,13 @@ body {
 #button7, #button8, #button9 {
     grid-row: 3 / span 1;
 }
-
+#hiddenBox {
+    grid-column: 5 / span 1;
+    grid-row: 4 / span 1;
+    height: 60px;
+    width: 120px;
+    opacity: 0;
+}
 #score {
     grid-column: 6 / span 1;
     grid-row: 4 / span 1;
@@ -85,83 +157,10 @@ body {
     grid-column: 7 / span 1;
     grid-row: 4 / span 1;
 }
-#leaderboards {
-    grid-column: 8 / span 3;
-    grid-row: 1 / span 12;
-    font-size: 1em;
-}
-#leaderboards h2 {
-    margin: 0 !important;
-}
 #new-game {
     grid-column: 5 / span 3;
     grid-row: 5 / span 2;
     justify-self: center;
-}
-#hiddenBox {
-    grid-column: 5 / span 1;
-    grid-row: 4 / span 1;
-    height: 60px;
-    width: 120px;
-    opacity: 0;
-}
-.scorebox {
-    border-radius: 8%;
-    box-sizing: border-box;
-    justify-self: center;
-    background-color: #E6ECF0;
-    height: 60px;
-    width: 120px;
-    text-align: center;
-    color: #574240;
-    font-size: 2em;
-    margin: 15px;
-    padding-top: 10px;
-}
-
-.button {
-    background-color: #FF5A60;
-    color: #FFF;
-    border: 0;
-    height: 60px;
-    width: 200px;
-    border-radius: 5px;
-    margin: 20px 0 0 100px;
-    font-weight: 600;
-    font-size: 1.5em;
-}
-
-.light {
-    opacity: 0.4;
-}
-.square {
-    display: flex;
-    place-items: center;
-    justify-self: center;
-    height: 50px;
-    width: 50px;
-    border-radius: 25%;
-    background-color: #574240;
-}
-#game-title {
-    display: flex;
-    font-family: 'Arial', sans-serif;
-    font-size: 3em;
-    color: #333;
-    margin: 50px 30px 40px 0;
-    justify-content: center;
-}
-details {
-    margin-left: 25px;
-}
-summary {
-    font-size:1.5em;
-    width:700px;
-}
-#instructions p {
-    margin-left: 25px;
-    font-size: 1em;
-    width: 300px;
 }
 
 /* Media Queries for Responsive Design */
