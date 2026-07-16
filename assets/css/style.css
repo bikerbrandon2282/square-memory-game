@@ -88,8 +88,10 @@ body {
 #leaderboards {
     grid-column: 8 / span 3;
     grid-row: 1 / span 12;
+    font-size: 1em;
+}
+#leaderboards h2 {
     margin: 0 !important;
-    font-size: 1.5em;
 }
 #new-game {
     grid-column: 5 / span 3;
