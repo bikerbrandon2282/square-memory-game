@@ -1,9 +1,7 @@
-html,body {
-  height:100%;
-  min-height:100%;
-  max-height:100%;
+body {
+  height:100vh;
   max-width:100%;
-  overflow-y: auto;
+  overflow-y: hidden;
   background-color: #fff6f5;
 }
 /* Modal Styles */
@@ -90,6 +88,7 @@ html,body {
 #leaderboards {
     grid-column: 8 / span 3;
     grid-row: 1 / span 12;
+    margin: 0 !important;
     font-size: 1.5em;
 }
 #new-game {
@@ -137,17 +136,17 @@ html,body {
     display: flex;
     place-items: center;
     justify-self: center;
-    height: 90px;
-    width: 90px;
+    height: 50px;
+    width: 50px;
     border-radius: 25%;
     background-color: #574240;
 }
 #game-title {
     display: flex;
     font-family: 'Arial', sans-serif;
-    font-size: 4em;
+    font-size: 3em;
     color: #333;
-    margin: 20px 25px 80px 0;
+    margin: 50px 30px 40px 0;
     justify-content: center;
 }
 details {
