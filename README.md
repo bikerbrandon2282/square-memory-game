@@ -13,6 +13,7 @@
 2. [User Experience](#user-stories)
    - [User Stories](#user-stories)
    - [UX Goals](#user-experience-goals)
+   - [Developer Challenges](#developer-challenges)
 3. [Design](#design)
    - [Colour Pallette](#colour-pallette)
    - [Typography](#typography)
@@ -84,6 +85,8 @@ These Goals have been derived from the above respective User Stories for an easi
 Throughout this website's development I have been faced with multiple challenges Some of these are detailed below.
 
 - I was originally using a basic grid for the buttons and had a very hard time trying to organise the instructions, leaderboards, scorebox and new game button on the screen where I wanted it. To overcome this challenge I watched a [Youtube video]("https://www.youtube.com/watch?v=JYfiaSKeYhE/")
+
+- I still struggled with placing and orientating the grid layout on multiple screens which has taken up so much of my time that my project was submitted late. (I am still struggling with this) With this issue, I am currently exploring and researching alternative methods to the grid layout that will still produce my intended design but with a little more adaptability as my main issue was with sizing issues and as the grid was not evenly filled it produced problems with layouts on smaller screens in which divs and other elements would overflow from there grid space and become unadaptable for moving it to a different layout on screen
 
 ## Design
 
