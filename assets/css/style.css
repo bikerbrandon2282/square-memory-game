@@ -173,14 +173,14 @@ summary {
     }
     #instructions {
         order: 1;
+        margin-bottom: 1rem;
+
+    }
+    #summary {
+        text-align: center;
     }
     #leaderboards {
         order: 2;
-    }
-    #instructions,
-    #leaderboards {
-        max-width: 100%;
-        text-align: center;
     }
 
     .board {
