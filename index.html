@@ -1,70 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Brandon's Memory Game</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon's Memory Game</title>
 
-        <!-- Favicon links -->
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-        <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <!-- Favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
 
-        <!-- Link to the CSS file -->
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-    <body>
-        <!-- Inital page load modal -->
-        <div id="instructionsModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">Close</span>
-                    <h2>Welcome to the Square Memory Game!</h2>
-                </div>
-                <p>This game is still in development, 
-                The leaderboards will only show the last players score.</p>
-                <p>Welcome to the Square Memory Game! Click 'New Game' to start playing.
-                You have 3 tries to match the sequence of squares. Good luck!</p>
+<body>
+
+    <!-- Initial Instructions Modal -->
+    <div id="instructionsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">Close</span>
+                <h2>Welcome to the Square Memory Game!</h2>
             </div>
+            <p>This game is still in development. The leaderboards will only show the last player's score.</p>
+            <p>Click 'New Game' to start playing. You have 3 tries to match the sequence of squares. Good luck!</p>
         </div>
-        <div>
-            <h1 id="game-title">Brandon's Memory Game</h1>
+    </div>
+
+    <header>
+        <h1 id="game-title">Brandon's Memory Game</h1>
+    </header>
+
+    <main class="container">
+
+        <!-- Instructions Panel -->
+        <details id="instructions">
+            <summary>Instructions</summary>
+            <p>Click the New Game button to start a new game. Watch the sequence of lights and repeat it in the same order.</p>
+        </details>
+        <!-- Leaderboards -->
+        <div id="leaderboards">
+            <h2>Leaderboards</h2>
+            <p id="lastScore"></p>
         </div>
+
+        <!-- Game Board (Flexbox 3×3 Grid) -->
+        <div class="board">
+
+            <div class="board-row">
+                <div data-listener="false" class="square square1" id="button1"></div>
+                <div data-listener="false" class="square square2" id="button2"></div>
+                <div data-listener="false" class="square square3" id="button3"></div>
+            </div>
+
+            <div class="board-row">
+                <div data-listener="false" class="square square4" id="button4"></div>
+                <div data-listener="false" class="square square5" id="button5"></div>
+                <div data-listener="false" class="square square6" id="button6"></div>
+            </div>
+
+            <div class="board-row">
+                <div data-listener="false" class="square square7" id="button7"></div>
+                <div data-listener="false" class="square square8" id="button8"></div>
+                <div data-listener="false" class="square square9" id="button9"></div>
+            </div>
+
+            <!-- Score Row -->
+            <div class="board-row">
+                <div class="scorebox" id="score">Score: 0</div>
+                <div class="scorebox" id="tryCount">Tries: 3</div>
+            </div>
+
+            <!-- New Game Button -->
+            <button class="button" onclick="newGame()">New Game</button>
+
+        </div>
+
         
-        <div class="container">
-            <details id="instructions">
-                <summary>Instructions</summary>
-                <p>Click the New Game button to start a new game. 
-                    Watch the sequence of lights 
-                    and repeat it in the same order.</p>
-            </details>
-            <!-- Game Sqaures -->
-            <div data-listener="false" class="square square1" id="button1"></div>
-            <div data-listener="false" class="square square2" id="button2"></div>
-            <div data-listener="false" class="square square3" id="button3"></div>
-            <div data-listener="false" class="square square4" id="button4"></div>
-            <div data-listener="false" class="square square5" id="button5"></div>
-            <div data-listener="false" class="square square6" id="button6"></div>
-            <div data-listener="false" class="square square7" id="button7"></div>
-            <div data-listener="false" class="square square8" id="button8"></div>
-            <div data-listener="false" class="square square9" id="button9"></div>
-            <div id="leaderboards">
-                <h2>Leaderboards</h2>
-                <p id="lastScore"></p>
-            </div>
-            <div id="hiddenBox" class="scorebox">Hidden</div>
-            <div class="scorebox" id="score">Score: 0</div>
-            <div class="scorebox" id="tryCount">Tries: 3</div>
-            <div id="new-game"><button class="button" onclick="newGame()">New Game</button></div>
-        </div>
-        <!-- Font Awesome Icons -->
-        <script src="https://kit.fontawesome.com/37e67f20d7.js" crossorigin="anonymous"></script>
-        <!-- Link to the JavaScript file -->
-        <script src="assets/js/script.js"></script>
-    </body>
+
+    </main>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/37e67f20d7.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+
+</body>
 
 </html>
