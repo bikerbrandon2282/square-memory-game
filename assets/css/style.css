@@ -185,7 +185,7 @@ summary {
 
     .board {
         order: 3;
-        max-width: 320px;
+        max-width: 20rem;
         gap: 20px;
     }
 
@@ -213,7 +213,7 @@ summary {
     }
 
     .board {
-        max-width: 260px;
+        max-width: 16.25rem;
         gap: 10px;
     }
 
