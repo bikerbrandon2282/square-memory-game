@@ -19,7 +19,7 @@
 <body>
 
     <!-- Initial Instructions Modal -->
-    <div id="instructionsModal" class="modal">
+    <dialog id="instructionsModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
                 <span class="close" aria-label="Close Pop up instructions">Close</span>
@@ -28,28 +28,32 @@
             <p>This game is still in development. The leaderboards will only show the last player's score.</p>
             <p>Click 'New Game' to start playing. You have 3 tries to match the sequence of squares. Good luck!</p>
         </div>
-    </div>
+    </dialog>
 
     <header>
-        <h1 id="game-title" aria-label="Game Title">Brandon's Memory Game</h1>
+        <h1 id="game-title">Brandon's Memory Game</h1>
     </header>
 
     <main class="container">
 
-        <!-- Instructions Panel -->
-        <details id="instructions" aria-label="Game Instructions">
-            <summary>Instructions</summary>
-            <p>Click the New Game button to start a new game. Watch the sequence of lights and repeat it in the same order.</p>
-        </details>
-        <!-- Leaderboards -->
-        <div id="leaderboards" aria-label="Leaderboards">
+        <section>
+            <!-- Instructions Panel -->
+             <h2>Instructions</h2>
+            <details id="instructions">
+                <summary>Click for Instructions</summary>
+                <p>Click the New Game button to start a new game. Watch the sequence of lights and repeat it in the same order.</p>
+            </details>
+        </section>
+        
+        <aside id="leaderboards">
+            <!-- Leaderboards -->
             <h2>Leaderboards</h2>
-            <p id="lastScore" aria-label="Last Player's Score"></p>
-        </div>
+            <p id="lastScore"></p>
+        </aside>
 
         <!-- Game Board (Flexbox 3×3 Grid) -->
-        <div class="board">
-
+        <section class="board">
+            
             <div class="board-row">
                 <button data-listener="false" class="square square1" id="button1" aria-label="Button 1"></button>
                 <button data-listener="false" class="square square2" id="button2" aria-label="Button 2"></button>
@@ -68,18 +72,17 @@
                 <button data-listener="false" class="square square9" id="button9" aria-label="Button 9"></button>
             </div>
 
-            <!-- Score Row -->
-            <div class="board-row">
-                <div class="scorebox" id="score" aria-label="Current Score">Score: 0</div>
-                <div class="scorebox" id="tryCount" aria-label="Remaining Tries">Tries: 3</div>
-            </div>
+            <footer>
+                <!-- Score Row -->
+                <div class="board-row">
+                    <div class="scorebox" id="score">Score: 0</div>
+                    <div class="scorebox" id="tryCount">Tries: 3</div>
+                </div>
+                <!-- New Game Button -->
+                <button class="button" onclick="newGame()">Start New Game</button>
+            </footer>
 
-            <!-- New Game Button -->
-            <button class="button" onclick="newGame()" aria-label="Start New Game">New Game</button>
-
-        </div>
-
-        
+        </section>
 
     </main>
 
