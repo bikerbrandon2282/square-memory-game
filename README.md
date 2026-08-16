@@ -88,6 +88,8 @@ Throughout this website's development I have been faced with multiple challenges
 
 - I still struggled with placing and orientating the grid layout on multiple screens which has taken up so much of my time that my project was submitted late. (I am still struggling with this) With this issue, I am currently exploring and researching alternative methods to the grid layout that will still produce my intended design but with a little more adaptability as my main issue was with sizing issues and as the grid was not evenly filled it produced problems with layouts on smaller screens in which divs and other elements would overflow from there grid space and become unadaptable for moving it to a different layout on screen. Using Google AI mode to help me discuss options that would produce a similar output to the current layout, I am likely to change back to a Flexbox layout with defined parameters to specify where I want each item, however this is likely going to require a restructure of my HTML layout to bring the required output to be near-identical
 
+- Branching from the above challange, I have implemented flexbox and styled it in a way that matches the original layout, This was a big switch however was much needed as the grid structure was very rigid and did not translate to smaller screens very well, but with the help of Microsoft CoPilot, this has been acheived and the layout now converts across all devices successfully.
+
 ## Design
 
 ### Colour Pallette
