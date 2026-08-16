@@ -22,7 +22,7 @@
     <div id="instructionsModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <span class="close">Close</span>
+                <span class="close" aria-label="Close Pop up instructions">Close</span>
                 <h2>Welcome to the Square Memory Game!</h2>
             </div>
             <p>This game is still in development. The leaderboards will only show the last player's score.</p>
@@ -31,51 +31,51 @@
     </div>
 
     <header>
-        <h1 id="game-title">Brandon's Memory Game</h1>
+        <h1 id="game-title" aria-label="Game Title">Brandon's Memory Game</h1>
     </header>
 
     <main class="container">
 
         <!-- Instructions Panel -->
-        <details id="instructions">
+        <details id="instructions" aria-label="Game Instructions">
             <summary>Instructions</summary>
             <p>Click the New Game button to start a new game. Watch the sequence of lights and repeat it in the same order.</p>
         </details>
         <!-- Leaderboards -->
-        <div id="leaderboards">
+        <div id="leaderboards" aria-label="Leaderboards">
             <h2>Leaderboards</h2>
-            <p id="lastScore"></p>
+            <p id="lastScore" aria-label="Last Player's Score"></p>
         </div>
 
         <!-- Game Board (Flexbox 3×3 Grid) -->
         <div class="board">
 
             <div class="board-row">
-                <div data-listener="false" class="square square1" id="button1"></div>
-                <div data-listener="false" class="square square2" id="button2"></div>
-                <div data-listener="false" class="square square3" id="button3"></div>
+                <div data-listener="false" class="square square1" id="button1" aria-label="Button 1"></div>
+                <div data-listener="false" class="square square2" id="button2" aria-label="Button 2"></div>
+                <div data-listener="false" class="square square3" id="button3" aria-label="Button 3"></div>
             </div>
 
             <div class="board-row">
-                <div data-listener="false" class="square square4" id="button4"></div>
-                <div data-listener="false" class="square square5" id="button5"></div>
-                <div data-listener="false" class="square square6" id="button6"></div>
+                <div data-listener="false" class="square square4" id="button4" aria-label="Button 4"></div>
+                <div data-listener="false" class="square square5" id="button5" aria-label="Button 5"></div>
+                <div data-listener="false" class="square square6" id="button6" aria-label="Button 6"></div>
             </div>
 
             <div class="board-row">
-                <div data-listener="false" class="square square7" id="button7"></div>
-                <div data-listener="false" class="square square8" id="button8"></div>
-                <div data-listener="false" class="square square9" id="button9"></div>
+                <div data-listener="false" class="square square7" id="button7" aria-label="Button 7"></div>
+                <div data-listener="false" class="square square8" id="button8" aria-label="Button 8"></div>
+                <div data-listener="false" class="square square9" id="button9" aria-label="Button 9"></div>
             </div>
 
             <!-- Score Row -->
             <div class="board-row">
-                <div class="scorebox" id="score">Score: 0</div>
-                <div class="scorebox" id="tryCount">Tries: 3</div>
+                <div class="scorebox" id="score" aria-label="Current Score">Score: 0</div>
+                <div class="scorebox" id="tryCount" aria-label="Remaining Tries">Tries: 3</div>
             </div>
 
             <!-- New Game Button -->
-            <button class="button" onclick="newGame()">New Game</button>
+            <button class="button" onclick="newGame()" aria-label="Start New Game">New Game</button>
 
         </div>
 
