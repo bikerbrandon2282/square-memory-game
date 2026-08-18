@@ -18,7 +18,7 @@
    - [Colour Pallette](#colour-pallette)
    - [Typography](#typography)
    - [Accessibility](#accessibility)
-   - [Skeleton Layout / Wireframe Images](#skeleton-layout--wireframe-images)
+   - [Skeleton Layout / Wireframe Images](#wireframes)
 4. [Features](#features)
    - [Landing / Home Page](#landing--home-page)
    - [Footer](#footer)
@@ -97,6 +97,16 @@ Throughout this website's development I have been faced with multiple challenges
 For the Colour Scheme of the site I chose the Colour Pallette below I got this from my starting colour of #FF5A60 which was used for my new game button, This was generated using the Color.space website linked in my credits below I tried the different colours to see if I could find a good background colour with a good contrasts with the buttons on the page, Any bright colour e.g. #0075C7, made it more difficult to play the game as when the button fades to show you the next sequence it can be hard to see which button was actually shown, The fade just blended into the background too much. And so I decided to use 
 
 ![Colour Pallette](assets/readme-images/color-pallette.png)
+
+## Typography
+
+For the Typography of the project, I have chosen to stay with the default font of the webpage as there is very little written words on my page and I believe it serves it's purpose well. If I were to have the instructions statically on the page or there was more paragraphs for my game then I would be looking at using a google font that works with the colour scheme, however as this is not the case. I think the default font for words works very well, keeps all writing very easy to read and saves development time normally consumed by researching which font will work for the project.
+
+## Accessibility
+Below you will see several images shown during my testing process to ensure that you can use the game by using only the 'Tab' key and the 'Enter' Keys. I have used Microsoft CoPilot to help with some areas of my code and there is also a screenshot below of it's response stating that it is very accessible to screen readers, as I do not have one available to me. Accessiblity can be a challenge to keep consistent once a project has already been started and that's why it is always important to take it into account when first building the project as this will save time with redesign and similar issues further down the line if you build a website then start working on the accessibility of the website.
+
+## Wireframes
+The wireframes for this project were made by hand drawings during my free time at work as I found it a little easier for this website as I already had a plan laid out and saw it as easier to 'put down on paper' so to speak. Rather than using a web-based wireframe that requires multiple drag and drop components. See the images below of these drawings within my sketchbook.
 
 ## Reflections
 
