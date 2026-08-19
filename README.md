@@ -115,7 +115,7 @@ Mobile View
 <img src='assets/readme-images/mobile-view.png' width='600px' alt='Image of Mobile View'>
 
 
-### Colour Pallette
+## Colour Pallette
 
 For the Colour Scheme of the site I chose the Colour Pallette below I got this from my starting colour of #FF5A60 which was used for my new game button, This was generated using the Color.space website linked in my credits below I tried the different colours to see if I could find a good background colour with a good contrasts with the buttons on the page, Any bright colour e.g. #0075C7, made it more difficult to play the game as when the button fades to show you the next sequence it can be hard to see which button was actually shown, The fade just blended into the background too much. And so I decided to use 
 
