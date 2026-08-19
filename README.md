@@ -19,21 +19,19 @@
    - [Colour Pallette](#colour-pallette)
    - [Typography](#typography)
    - [Accessibility](#accessibility)
-   - [Skeleton Layout / Wireframe Images](#wireframes)
+   - [Wireframe Images](#wireframes)
 4. [Features](#features)
-   - [Landing / Home Page](#landing--home-page)
-   - [Footer](#footer)
-   - [Favicon & App Icons](#favicon--app-icons)
+   - [Home Page](#home-page)
+   - [Favicons](#favicons)
 6. [Technologies Used](#technologies-used)
 8. [Testing](#testing)
-   - [Manual / Functional Testing Table](#manual--functional-testing-table)
+   - [Manual Testing Table](#manual-testing-table)
    - [Cross-Browser Testing](#cross-browser-testing)
    - [Validator Testing](#validator-testing)
    - [WAVE - Web Accessibility Evaluation Tools](#wave---web-accessibility-evaluation-tools)
-   - [Lighthouse Performance Optimisation Summary](#lighthouse-performance-optimisation-summary)
+   - [Lighthouse Summary](#lighthouse-summary)
         - [Lighthouse Optimization Reflections](#lighthouse-optimization-reflections)
-        - [Accessibility Testing Comparison](#accessibility-testing-comparison)
-        - [User Feedback Testing](#user-feedback-testing)
+        - [Accessibility Testing](#accessibility-testing)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
 11. [Reflections](#reflections)
@@ -113,7 +111,43 @@ Below you will see several images shown during my testing process to ensure that
 ## Wireframes
 The wireframes for this project were made by hand drawings during my free time at work as I found it a little easier for this website as I already had a plan laid out and saw it as easier to 'put down on paper' so to speak. Rather than using a web-based wireframe that requires multiple drag and drop components. See the images below of these drawings within my sketchbook.
 
-## Reflections
+# Features
+
+## Home page
+
+## Favicons
+
+# Technologies Used
+
+Here is a brief list of the technologies I have used for the development of this website
+
+- Google Gemini AI - This was used for suggestions on better layout implementations
+- Microsoft CoPilot - CoPilot was used towards the end to improve flexbox layout and give suggestions on optimising code where possible
+- Visual Studio Code - This was used to build the website as well as host a local server for testing.
+- Git/Github - GitHub was used for commit tracking and keeping code updates organised and retrievable
+- Github Pages - GH Pages was used to host the main website once all changes had been commited and testing was complete
+
+# Testing
+
+## Manual Testing Table
+
+## Cross-Browser Testing
+
+## Validator Testing
+
+## WAVE - Web Accessibility Evaluation Tools
+
+# Lighthouse Summary
+
+## Lighthouse Optimisation Reflections
+
+## User Feedback Testing
+
+# Deployment
+
+# Credits
+
+# Reflections
 
 This website is still very far behind being a finished product, However I have ran out of time to finish it and must submit something and progress with the rest of my course before I fall even more behind, When I get my results back, I am fully aware this will be an astonishingly state of a fail. However during the course of this project it has been the summer season with tremendous heatwaves which has resulted in the room my Computer is located in being uninhabitable, I have attempted to switch to working on my laptop for the remainder of the project however due to it being a Microsoft Surface pro, the layout of each device is completely different and stunts my progress so I began going to my computer every time the heat dies down and at night when I don't need to be sleeping for work the next morning, However due to the awkwardness of this It has caused me to fall quite behind, further than I believed I was. By the time I receive my results and have to resubmit I am hoping to be in a much better position, Temperature wise and milestone 3 wise. Whilst this is under review and whatever consequence comes, I will be continuing to improve and move this  project forward as and when I find time inbetween work and my portal learning, I know the readME is the biggest hurdle and needs alot more work, this will be slowly progressed as and when I can, There is a few photos and images in my images folder for this repo that have not yet been added to the site, I will be getting to these.. and The main game is currently under some layout issues with different devices behaving very differently, for example I added the mobile layout media query and lost all interaction with the squares solely on a mobile (was absolutely fine in chrome devTools mobile view) this is still being developed as I regained functionality of buttons 4-9 however the top buttons (1-3) don't seem to like being pressed on a mobile, I suspect this is something with the eventhandlers and will be looking into it. 
 
