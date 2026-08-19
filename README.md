@@ -4,7 +4,9 @@
 
 <details>
 <summary>Image of Live game screen</summary>
-![Live site of Square Memory Game](assets/images/readme-images/screenshot-game-page.webp)
+
+<img src='assets/readme-images/desktop-view.png' width='600px'>
+
 </details>
 
 ## Table of Contents
@@ -93,13 +95,32 @@ Throughout this website's development I have been faced with multiple challenges
 
 For the design of my website I went with a basic page with 9 buttons to add a bit of a challenge to players prone to higher scores than the typical 4/5 buttons, a leaderboard table with the potential to see previous scores that give you a target to beat. I also added an Instructions dropdown and modal on load of page with the instructions on to give new players a guide on how to get started, This then can be closed with the relevant 'Close' button, and incase players forget or need a reminder, or even simply skip the modal without reading it, The Instructions dropdown gives a interactive way for players to re-read instructions mid-game. Currently the modal also states that this game is under development and the leaderboards will only show the last score and not a table of recent scores. This will remain the case until such time as I complete my Milestone 3 project to work with databases, after this, I will return to this game in order to add a simple database to store the last 3 players scores, and possibly their names/initials to go along with them. For now, the game is fully functional as intended, provided players with info on how to play and shows the current score, remaining tries, and provides feedback to the user in order to inform the user that the last move was incorrect. Below are screenshots of the website on Mobile, Tablet, and Desktop views in respective order.
 
-## Screenshots
+### Screenshots
+This is the view of the Modal on all screens with the height and width adjusting to the current Viewport size.
+
+Modal presented to user on page load
+
+<img src='assets/readme-images/modal-view.png' width='600px' alt='Image of Modal Showing on page load'>
+
+Desktop View
+
+<img src='assets/readme-images/desktop-view.png' width='600px' alt='Image of Desktop View'>
+
+Tablet View
+
+<img src='assets/readme-images/tablet-view.png' width='600px' alt='Image of Tablet View'>
+
+Mobile View
+
+<img src='assets/readme-images/mobile-view.png' width='600px' alt='Image of Mobile View'>
+
 
 ### Colour Pallette
 
 For the Colour Scheme of the site I chose the Colour Pallette below I got this from my starting colour of #FF5A60 which was used for my new game button, This was generated using the Color.space website linked in my credits below I tried the different colours to see if I could find a good background colour with a good contrasts with the buttons on the page, Any bright colour e.g. #0075C7, made it more difficult to play the game as when the button fades to show you the next sequence it can be hard to see which button was actually shown, The fade just blended into the background too much. And so I decided to use 
 
 ![Colour Pallette](assets/readme-images/color-pallette.png)
+<img src='assets/readme-images/color-pallette.png' width='600px' alt='Image of chosen colour pallette for website'>
 
 ## Typography
 
