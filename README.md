@@ -119,7 +119,6 @@ Mobile View
 
 For the Colour Scheme of the site I chose the Colour Pallette below I got this from my starting colour of #FF5A60 which was used for my new game button, This was generated using the Color.space website linked in my credits below I tried the different colours to see if I could find a good background colour with a good contrasts with the buttons on the page, Any bright colour e.g. #0075C7, made it more difficult to play the game as when the button fades to show you the next sequence it can be hard to see which button was actually shown, The fade just blended into the background too much. And so I decided to use 
 
-![Colour Pallette](assets/readme-images/color-pallette.png)
 <img src='assets/readme-images/color-pallette.png' width='600px' alt='Image of chosen colour pallette for website'>
 
 ## Typography
@@ -131,6 +130,14 @@ Below you will see several images shown during my testing process to ensure that
 
 ## Wireframes
 The wireframes for this project were made by hand drawings during my free time at work as I found it a little easier for this website as I already had a plan laid out and saw it as easier to 'put down on paper' so to speak. Rather than using a web-based wireframe that requires multiple drag and drop components. See the images below of these drawings within my sketchbook.
+
+Mobile and Desktop Wireframes
+
+<img src='assets/readme-images/mobile&desktop-wf.jpg' width='600px' alt='Image of hand-drawn wireframe for Mobile and Desktop views'>
+
+Tablet Wireframe
+
+<img src='assets/readme-images/tablet-wf.jpg' width='600px' alt='Image of hand-drawn wireframe for Tablet view'>
 
 # Features
 
