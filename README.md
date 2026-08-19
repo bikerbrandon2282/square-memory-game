@@ -15,6 +15,7 @@
    - [UX Goals](#user-experience-goals)
    - [Developer Challenges](#developer-challenges)
 3. [Design](#design)
+   - [Screenshots](#screenshots)
    - [Colour Pallette](#colour-pallette)
    - [Typography](#typography)
    - [Accessibility](#accessibility)
@@ -91,6 +92,10 @@ Throughout this website's development I have been faced with multiple challenges
 - Branching from the above challange, I have implemented flexbox and styled it in a way that matches the original layout, This was a big switch however was much needed as the grid structure was very rigid and did not translate to smaller screens very well, but with the help of Microsoft CoPilot, this has been acheived and the layout now converts across all devices successfully.
 
 ## Design
+
+For the design of my website I went with a basic page with 9 buttons to add a bit of a challenge to players prone to higher scores than the typical 4/5 buttons, a leaderboard table with the potential to see previous scores that give you a target to beat. I also added an Instructions dropdown and modal on load of page with the instructions on to give new players a guide on how to get started, This then can be closed with the relevant 'Close' button, and incase players forget or need a reminder, or even simply skip the modal without reading it, The Instructions dropdown gives a interactive way for players to re-read instructions mid-game. Currently the modal also states that this game is under development and the leaderboards will only show the last score and not a table of recent scores. This will remain the case until such time as I complete my Milestone 3 project to work with databases, after this, I will return to this game in order to add a simple database to store the last 3 players scores, and possibly their names/initials to go along with them. For now, the game is fully functional as intended, provided players with info on how to play and shows the current score, remaining tries, and provides feedback to the user in order to inform the user that the last move was incorrect. Below are screenshots of the website on Mobile, Tablet, and Desktop views in respective order.
+
+## Screenshots
 
 ### Colour Pallette
 
