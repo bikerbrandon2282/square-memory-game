@@ -203,7 +203,9 @@ Here is a list of all the the websites or people I have used or collaborated wit
 
 - Google Gemini AI - Used to suggest different methods of implementation or to remind me of the syntax for such things like semantic tags, Meta data
 - Microsoft CoPilot - Used to help me refactor the design from a rigid grid template layout into a flexbox design without disturbing the locations of everything on the page.
-
+- <a href = "https://favicon.io/">Favicon Generator</a>
+- <a href = "https://stackoverflow.com/">Stack Overflow</a> - Used for debugging any issues when CSS won't correctly adjust elements (usually simply because I have used .class to attach the style rule on a #id element or the other way around xD)
+- <a href = "https://github.com/bikerbrandon2282/simon-memory-game">Simon Game Repository</a> This is my own Repo that has been built by me following along a Code Institute Challenge and video. This was used solely for the basic game functions that make it display and read player moves, This was the inital code which was then expanded to include more buttons and additional function for the leaderboards and Trys counter.
 
 # Reflections
 
