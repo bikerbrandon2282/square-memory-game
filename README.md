@@ -169,6 +169,17 @@ Here is a brief list of the technologies I have used for the development of this
 
 ## Manual Testing Table
 
+| Test Area | Test Description | Expected Result | Actual Result | Status |
+| --- | --- | --- | --- | --- |
+| **Modal Display** | Load the page and observe whether the instructions modal appears automatically. | Modal should display on page load with instructions visible. | Modal displayed correctly on page load. | ✔️ Passed |
+| **Instructions Details Toggle** | Click the “Click for Instructions” ``<details>`` element. | Instructions text should expand and collapse when toggled. | Instructions expanded and collapsed as expected. | ✔️ Passed |
+| **Game Board Buttons** | Click each of the 9 square buttons during gameplay. | Each button should register a move, light up briefly, and interact with the sequence logic. | All buttons responded correctly and lit up when expected. | ✔️ Passed |
+| **New Game Button** | Click the “Start New Game” button. | Game should reset score, tries, and generate a new sequence. | Game reset correctly and generated a new sequence. | ✔️ Passed |
+| **Score Box Updates** | Complete a correct sequence. | Score should increase by 1. | Score updated correctly. | ✔️ Passed |
+| **Try Count Updates** | Make an incorrect move. | Try count should decrease by 1. | Try count decreased correctly. | ✔️ Passed |
+| **Wrong Move Alerts** | Click an incorrect square during a sequence. | Alert should display “Wrong move!” and sequence should restart. | Alert displayed and sequence restarted. | ✔️ Passed |
+| **Game Over Alert** | Use all tries by making repeated incorrect moves. | Alert should display “Game Over!” with final score. | Game Over alert displayed correctly with score. | ✔️ Passed |
+| **Leaderboard Update** | Finish a game and trigger Game Over. | Leaderboard should show the last player’s score. | Leaderboard updated with last score. | ✔️ Passed |
 ## Cross-Browser Testing
 
 ## Validator Testing
