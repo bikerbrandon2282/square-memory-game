@@ -131,4 +131,3 @@ function playerTurn() {
     }
   }
 };
-module.exports = {game, modal, span, newGame, lightsOn, showScore, showTryCount, addTurn, playerTurn, showTurns,};
