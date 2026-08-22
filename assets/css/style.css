@@ -177,7 +177,7 @@ summary {
         align-items: center;
         justify-content: flex-start;
         gap: 20px;
-        padding-top: 10px;
+        padding-top: 0;
     }
     #instructions {
         order: 1;
