@@ -143,7 +143,17 @@ Tablet Wireframe
 
 ## Home page
 
+This is the 'Homepage' of the website, as the website is a basic game it does not have multiple pages it runs everything on the main page for the user to see all information availible like the instructions, leaderboards, and actual game tiles. Maybe in future once I expand the Leaderboards functionality with a database to hold a full list of previous scores, I could look at a separate page for this, however this is not needed yet and it outside of my current skillset.
+
+<img src='assets/readme-images/desktop-view.png' width='600px' alt='Image of Desktop View'>
+
 ## Favicons
+
+I made the below favicon using a generator I found online, It currently looks a little blurry but this is because it is a blown up image of what is designed to be very small, I have attempted to use a number of free converters, upscalers and resolution increasing websites to enhance the image so it would look more clear on a bigger view however all of these only made the image worse, so I have just adjusted the size to a proportion visible to see the design but not make it blurry or distorted.
+
+I have this image added to the website in a few sizes to account for different devices, browsers and to keep it visible of any device for example I have it in an apple-touch-icon, and favicon in 16x16 and 32x32.
+
+<img src ="assets\favicons\android-chrome-512x512.png" width = '100px' alt= 'Favicon logo of website'>
 
 # Technologies Used
 
@@ -173,7 +183,27 @@ Here is a brief list of the technologies I have used for the development of this
 
 # Deployment
 
+- Login to Github
+- Locate the Motorbikes-for-beginners Repository
+- Navigate to the Repo's settings page
+- open the pages tab in the Code and automation section
+- choose from the Branch dropdown menu 'main' as we want to deploy the site from the main branch
+- Ensure the '/root' folder is selected in the next dropdown menu and click save.
+- Wait a few minutes for the page to be built, then go to the main 'code' tab to find the Deployment section along side the code (see screenshot below) and click the link to 'github-pages' as this is the environment we deployed with.
+
+![screenshot of main code tab with Deployment section circled showing git-pages link](assets\readme-images\github-deploy-pages.png)
+
+- You should now see a screen like below with your link to your deployed website.
+
+![screenshot of git-pages section with circled deployed website link](assets\readme-images\github-deploy-pages-link.png)
+
 # Credits
+
+Here is a list of all the the websites or people I have used or collaborated with in order to complete this project and fix bugs in the code.
+
+- Google Gemini AI - Used to suggest different methods of implementation or to remind me of the syntax for such things like semantic tags, Meta data
+- Microsoft CoPilot - Used to help me refactor the design from a rigid grid template layout into a flexbox design without disturbing the locations of everything on the page.
+
 
 # Reflections
 
