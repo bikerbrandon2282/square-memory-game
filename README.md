@@ -186,6 +186,26 @@ Here is a brief list of the technologies I have used for the development of this
 
 ## WAVE - Web Accessibility Evaluation Tools
 
+I used the <a href = "https://wave.webaim.org/">WAVE</a> tool website to test my websites usability and accessiblity. This was successful as my only issue was with contrast as you'll see below
+
+The inital test shows that I had 1 issue which was my contrast on the close button for the modal.
+
+<img src ="assets\readme-images\wave-test1.png" width = '500px' alt= 'screenshot of 9.1/10 usability score of website'>
+
+This is the Contrast ratio I had before, And shows that this ratio failed the test.
+
+<img src ="assets\readme-images\wave-contrast1.png" width = '500px' alt= 'screenshot of contrast ratio score showing it failed the test'>
+
+This is the Contrast ratio after I adjusted the slider to change the lightness to a colour I was happy with as I still wanted to keep the colour adjusting when hovered over
+
+<img src ="assets\readme-images\wave-contrast2.png" width = '500px' alt= 'screenshot of adjusted contrast ratio score showing this now passed the test'>
+
+Finally I retested the website to ensure there was no other issues and this is the below screenshot I ended with showing a 10/10 score!
+
+<img src ="assets\readme-images\wave-test2.png" width = '500px' alt= 'screenshot of 10/10 usability score of website'>
+
+
+
 # Lighthouse Summary
 
 ## Lighthouse Optimisation Reflections
