@@ -182,6 +182,10 @@ Here is a brief list of the technologies I have used for the development of this
 | **Leaderboard Update** | Finish a game and trigger Game Over. | Leaderboard should show the last player’s score. | Leaderboard updated with last score. | ✔️ Passed |
 ## Cross-Browser Testing
 
+I used my friend as a test subject here as I use an android phone and he uses Apple Iphones so I could compare if there was any major issues that needs resolving for compatibilty reasons, However as you can see in the below screenshot of our conversation, Dalton had no issues using the website and was happy with it.
+
+<img src ="assets\readme-images\iphone-test.jpg" width = '200px' alt= 'screenshot of conversation with friend Dalton who tested the website on iphone 17'>
+
 ## Validator Testing
 
 ## WAVE - Web Accessibility Evaluation Tools
@@ -237,6 +241,7 @@ Here is a list of all the the websites or people I have used or collaborated wit
 - <a href = "https://favicon.io/">Favicon Generator</a>
 - <a href = "https://stackoverflow.com/">Stack Overflow</a> - Used for debugging any issues when CSS won't correctly adjust elements (usually simply because I have used .class to attach the style rule on a #id element or the other way around xD)
 - <a href = "https://github.com/bikerbrandon2282/simon-memory-game">Simon Game Repository</a> This is my own Repo that has been built by me following along a Code Institute Challenge and video. This was used solely for the basic game functions that make it display and read player moves, This was the inital code which was then expanded to include more buttons and additional function for the leaderboards and Trys counter.
+- <a href = "https://wave.webaim.org/">WAVE accessibility website</a> This website was for testing usability of website
 
 # Reflections
 
