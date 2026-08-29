@@ -198,6 +198,10 @@ Below is the screenshot showing no errors, The span element error was fixed simp
 
 <img src="assets\readme-images\html-val-2.png" width="600px" alt="screenshot of HTML validator showing no errors">
 
+### CSS
+
+
+
 ## WAVE - Web Accessibility Evaluation Tools
 
 I used the <a href = "https://wave.webaim.org/">WAVE</a> tool website to test my websites usability and accessiblity. This was successful as my only issue was with contrast as you'll see below
