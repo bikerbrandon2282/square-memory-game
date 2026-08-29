@@ -194,6 +194,10 @@ Here is our first validation which shows only one error which was that I had a A
 
 <img src="assets\readme-images\html-val-1.png" width = '600px' alt = "screenshot of validator test showing 1 error">
 
+Below is the screenshot showing no errors, The span element error was fixed simply by changing the span element to a button element, however this also required me to add some addition styles to the .close style rule in CSS as the button element comes with a default background colour and border which I removed to bring back the styles in place before and make the button blend with the header of the modal better. This error actually helped as it showed me that I have the button placed slighly closer to the top of the header than desired so I added a 5px margin to bring this down.
+
+<img src="assets\readme-images\html-val-2.png" width="600px" alt="screenshot of HTML validator showing no errors">
+
 ## WAVE - Web Accessibility Evaluation Tools
 
 I used the <a href = "https://wave.webaim.org/">WAVE</a> tool website to test my websites usability and accessiblity. This was successful as my only issue was with contrast as you'll see below
