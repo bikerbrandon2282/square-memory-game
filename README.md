@@ -33,7 +33,7 @@
    - [WAVE - Web Accessibility Evaluation Tools](#wave---web-accessibility-evaluation-tools)
    - [Lighthouse Summary](#lighthouse-summary)
         - [Lighthouse Optimization Reflections](#lighthouse-optimization-reflections)
-        - [Accessibility Testing](#accessibility-testing)
+        - [User Feedback Testing](#accessibility-testing)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
 11. [Reflections](#reflections)
@@ -81,6 +81,8 @@ These Goals have been derived from the above respective User Stories for an easi
 
 > Developer Note: Maybe use a Modal for instructions on page load then have a details drop down for seamless reading during gameplay
 
+[Back to Top](#square-memory-game)
+
 ## Development Challenges
 
 Throughout this website's development I have been faced with multiple challenges Some of these are detailed below.
@@ -91,11 +93,16 @@ Throughout this website's development I have been faced with multiple challenges
 
 - Branching from the above challange, I have implemented flexbox and styled it in a way that matches the original layout, This was a big switch however was much needed as the grid structure was very rigid and did not translate to smaller screens very well, but with the help of Microsoft CoPilot, this has been acheived and the layout now converts across all devices successfully.
 
+[Back to Top](#square-memory-game)
+
 ## Design
 
 For the design of my website I went with a basic page with 9 buttons to add a bit of a challenge to players prone to higher scores than the typical 4/5 buttons, a leaderboard table with the potential to see previous scores that give you a target to beat. I also added an Instructions dropdown and modal on load of page with the instructions on to give new players a guide on how to get started, This then can be closed with the relevant 'Close' button, and incase players forget or need a reminder, or even simply skip the modal without reading it, The Instructions dropdown gives a interactive way for players to re-read instructions mid-game. Currently the modal also states that this game is under development and the leaderboards will only show the last score and not a table of recent scores. This will remain the case until such time as I complete my Milestone 3 project to work with databases, after this, I will return to this game in order to add a simple database to store the last 3 players scores, and possibly their names/initials to go along with them. For now, the game is fully functional as intended, provided players with info on how to play and shows the current score, remaining tries, and provides feedback to the user in order to inform the user that the last move was incorrect. Below are screenshots of the website on Mobile, Tablet, and Desktop views in respective order.
 
+[Back to Top](#square-memory-game)
+
 ### Screenshots
+
 This is the view of the Modal on all screens with the height and width adjusting to the current Viewport size.
 
 Modal presented to user on page load
@@ -114,6 +121,7 @@ Mobile View
 
 <img src='assets/readme-images/mobile-view.png' width='600px' alt='Image of Mobile View'>
 
+[Back to Top](#square-memory-game)
 
 ## Colour Pallette
 
@@ -121,14 +129,22 @@ For the Colour Scheme of the site I chose the Colour Pallette below I got this f
 
 <img src='assets/readme-images/color-pallette.png' width='600px' alt='Image of chosen colour pallette for website'>
 
+[Back to Top](#square-memory-game)
+
 ## Typography
 
 For the Typography of the project, I have chosen to stay with the default font of the webpage as there is very little written words on my page and I believe it serves it's purpose well. If I were to have the instructions statically on the page or there was more paragraphs for my game then I would be looking at using a google font that works with the colour scheme, however as this is not the case. I think the default font for words works very well, keeps all writing very easy to read and saves development time normally consumed by researching which font will work for the project.
 
+[Back to Top](#square-memory-game)
+
 ## Accessibility
+
 Below you will see several images shown during my testing process to ensure that you can use the game by using only the 'Tab' key and the 'Enter' Keys. I have used Microsoft CoPilot to help with some areas of my code and there is also a screenshot below of it's response stating that it is very accessible to screen readers, as I do not have one available to me. Accessiblity can be a challenge to keep consistent once a project has already been started and that's why it is always important to take it into account when first building the project as this will save time with redesign and similar issues further down the line if you build a website then start working on the accessibility of the website.
 
+[Back to Top](#square-memory-game)
+
 ## Wireframes
+
 The wireframes for this project were made by hand drawings during my free time at work as I found it a little easier for this website as I already had a plan laid out and saw it as easier to 'put down on paper' so to speak. Rather than using a web-based wireframe that requires multiple drag and drop components. See the images below of these drawings within my sketchbook.
 
 Mobile and Desktop Wireframes
@@ -138,6 +154,8 @@ Mobile and Desktop Wireframes
 Tablet Wireframe
 
 <img src='assets/readme-images/tablet-wf.jpg' width='600px' alt='Image of hand-drawn wireframe for Tablet view'>
+
+[Back to Top](#square-memory-game)
 
 # Features
 
@@ -155,6 +173,8 @@ I have this image added to the website in a few sizes to account for different d
 
 <img src ="assets\favicons\android-chrome-512x512.png" width = '100px' alt= 'Favicon logo of website'>
 
+[Back to Top](#square-memory-game)
+
 # Technologies Used
 
 Here is a brief list of the technologies I have used for the development of this website
@@ -164,6 +184,8 @@ Here is a brief list of the technologies I have used for the development of this
 - Visual Studio Code - This was used to build the website as well as host a local server for testing.
 - Git/Github - GitHub was used for commit tracking and keeping code updates organised and retrievable
 - Github Pages - GH Pages was used to host the main website once all changes had been commited and testing was complete
+
+[Back to Top](#square-memory-game)
 
 # Testing
 
@@ -180,11 +202,16 @@ Here is a brief list of the technologies I have used for the development of this
 | **Wrong Move Alerts** | Click an incorrect square during a sequence. | Alert should display “Wrong move!” and sequence should restart. | Alert displayed and sequence restarted. | ✔️ Passed |
 | **Game Over Alert** | Use all tries by making repeated incorrect moves. | Alert should display “Game Over!” with final score. | Game Over alert displayed correctly with score. | ✔️ Passed |
 | **Leaderboard Update** | Finish a game and trigger Game Over. | Leaderboard should show the last player’s score. | Leaderboard updated with last score. | ✔️ Passed |
+
+[Back to Top](#square-memory-game)
+
 ## Cross-Browser Testing
 
 I used my friend as a test subject here as I use an android phone and he uses Apple Iphones so I could compare if there was any major issues that needs resolving for compatibilty reasons, However as you can see in the below screenshot of our conversation, Dalton had no issues using the website and was happy with it.
 
 <img src ="assets\readme-images\iphone-test.jpg" width = '200px' alt= 'screenshot of conversation with friend Dalton who tested the website on iphone 17'>
+
+[Back to Top](#square-memory-game)
 
 ## Validator Testing
 
@@ -208,6 +235,8 @@ I then changed this units to similar EM and REM values to achieve the same outpu
 
 <img src="assets\readme-images\css-val-2.png" width="600px" alt="Screenshot of CSS validator showing 0 issues found">
 
+[Back to Top](#square-memory-game)
+
 ## WAVE - Web Accessibility Evaluation Tools
 
 I used the <a href = "https://wave.webaim.org/">WAVE</a> tool website to test my websites usability and accessiblity. This was successful as my only issue was with contrast as you'll see below
@@ -228,13 +257,15 @@ Finally I retested the website to ensure there was no other issues and this is t
 
 <img src ="assets\readme-images\wave-test2.png" width = '500px' alt= 'screenshot of 10/10 usability score of website'>
 
-
+[Back to Top](#square-memory-game)
 
 # Lighthouse Summary
 
 ## Lighthouse Optimisation Reflections
 
 ## User Feedback Testing
+
+[Back to Top](#square-memory-game)
 
 # Deployment
 
@@ -252,6 +283,8 @@ Finally I retested the website to ensure there was no other issues and this is t
 
 ![screenshot of git-pages section with circled deployed website link](assets\readme-images\github-deploy-pages-link.png)
 
+[Back to Top](#square-memory-game)
+
 # Credits
 
 Here is a list of all the the websites or people I have used or collaborated with in order to complete this project and fix bugs in the code.
@@ -263,8 +296,12 @@ Here is a list of all the the websites or people I have used or collaborated wit
 - <a href = "https://github.com/bikerbrandon2282/simon-memory-game">Simon Game Repository</a> This is my own Repo that has been built by me following along a Code Institute Challenge and video. This was used solely for the basic game functions that make it display and read player moves, This was the inital code which was then expanded to include more buttons and additional function for the leaderboards and Trys counter.
 - <a href = "https://wave.webaim.org/">WAVE accessibility website</a> This website was for testing usability of website
 
+[Back to Top](#square-memory-game)
+
 # Reflections
 
 This website is still very far behind being a finished product, However I have ran out of time to finish it and must submit something and progress with the rest of my course before I fall even more behind, When I get my results back, I am fully aware this will be an astonishingly state of a fail. However during the course of this project it has been the summer season with tremendous heatwaves which has resulted in the room my Computer is located in being uninhabitable, I have attempted to switch to working on my laptop for the remainder of the project however due to it being a Microsoft Surface pro, the layout of each device is completely different and stunts my progress so I began going to my computer every time the heat dies down and at night when I don't need to be sleeping for work the next morning, However due to the awkwardness of this It has caused me to fall quite behind, further than I believed I was. By the time I receive my results and have to resubmit I am hoping to be in a much better position, Temperature wise and milestone 3 wise. Whilst this is under review and whatever consequence comes, I will be continuing to improve and move this  project forward as and when I find time inbetween work and my portal learning, I know the readME is the biggest hurdle and needs alot more work, this will be slowly progressed as and when I can, There is a few photos and images in my images folder for this repo that have not yet been added to the site, I will be getting to these.. and The main game is currently under some layout issues with different devices behaving very differently, for example I added the mobile layout media query and lost all interaction with the squares solely on a mobile (was absolutely fine in chrome devTools mobile view) this is still being developed as I regained functionality of buttons 4-9 however the top buttons (1-3) don't seem to like being pressed on a mobile, I suspect this is something with the eventhandlers and will be looking into it. 
 
 As much as this module has severly impacted my motivation to continue and my mental health in general, I am trying to see this for the massive learning curve that it is.. Review me with the upmost Generosity and Pity X'D
+
+[Back to Top](#square-memory-game)
