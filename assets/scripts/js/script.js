@@ -4,11 +4,11 @@
 // Get the modal
 var modal = document.getElementById("instructionsModal");
 modal.style.display = "block";
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+// Get the button element that closes the modal
+var button = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (Close), close the modal
-span.onclick = function() {
+button.onclick = function() {
   modal.style.display = "none";
 }
 
