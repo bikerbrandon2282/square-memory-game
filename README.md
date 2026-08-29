@@ -200,7 +200,13 @@ Below is the screenshot showing no errors, The span element error was fixed simp
 
 ### CSS
 
+Below you will see a screenshot of the CSS validator showing 6 issues which were all separate cases of using fractional units which were not changed when the layout changed from a grid layout to flexbox. This causes an error as fractional units are strictly grid based units so they do not work well with flexbox even though it may look like they do.
 
+<img src="assets\readme-images\css-val-1.png" width="600px"alt="Screenshot of CSS validator showing 6 of the same issues in separate lines">
+
+I then changed this units to similar EM and REM values to achieve the same output and it was a success! below is the image showing this now passed the validator with 0 issues.
+
+<img src="assets\readme-images\css-val-2.png" width="600px"alt="Screenshot of CSS validator showing 0 issues found">
 
 ## WAVE - Web Accessibility Evaluation Tools
 
