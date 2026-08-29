@@ -188,6 +188,12 @@ I used my friend as a test subject here as I use an android phone and he uses Ap
 
 ## Validator Testing
 
+### HTML
+
+Here is our first validation which shows only one error which was that I had a ARIA-LABEL on a span element without role
+
+<img src="assets\readme-images\html-val-1.png" width = '600px' alt = "screenshot of validator test showing 1 error">
+
 ## WAVE - Web Accessibility Evaluation Tools
 
 I used the <a href = "https://wave.webaim.org/">WAVE</a> tool website to test my websites usability and accessiblity. This was successful as my only issue was with contrast as you'll see below
