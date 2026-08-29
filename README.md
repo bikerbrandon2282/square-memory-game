@@ -264,7 +264,17 @@ Finally I retested the website to ensure there was no other issues and this is t
 
 # Lighthouse Summary
 
+## Desktop Test
+
+<img src="assets\readme-images\lighthouse-1.png" width="600px" alt="Screenshot of Desktop lighthouse test">
+
+## Mobile Test
+
+<img src="assets\readme-images\lighthouse-2.png" width="600px" alt="Screenshot of Mobile lighthouse test">
+
 ## Lighthouse Optimisation Reflections
+
+Above is the Screenshots for lighthouse testing which I have done after all the validator tests and so these have come back with very positive scores! The only reason for less than 100 on performance is Rendering issues which is shown in the mobile test image and is relating to the Font Awesome link so this is not something I can improve, I am very happy with these scores and ready to submit assignment.
 
 ## User Feedback Testing
 
@@ -309,5 +319,9 @@ Here is a list of all the the websites or people I have used or collaborated wit
 This website is still very far behind being a finished product, However I have ran out of time to finish it and must submit something and progress with the rest of my course before I fall even more behind, When I get my results back, I am fully aware this will be an astonishingly state of a fail. However during the course of this project it has been the summer season with tremendous heatwaves which has resulted in the room my Computer is located in being uninhabitable, I have attempted to switch to working on my laptop for the remainder of the project however due to it being a Microsoft Surface pro, the layout of each device is completely different and stunts my progress so I began going to my computer every time the heat dies down and at night when I don't need to be sleeping for work the next morning, However due to the awkwardness of this It has caused me to fall quite behind, further than I believed I was. By the time I receive my results and have to resubmit I am hoping to be in a much better position, Temperature wise and milestone 3 wise. Whilst this is under review and whatever consequence comes, I will be continuing to improve and move this  project forward as and when I find time inbetween work and my portal learning, I know the readME is the biggest hurdle and needs alot more work, this will be slowly progressed as and when I can, There is a few photos and images in my images folder for this repo that have not yet been added to the site, I will be getting to these.. and The main game is currently under some layout issues with different devices behaving very differently, for example I added the mobile layout media query and lost all interaction with the squares solely on a mobile (was absolutely fine in chrome devTools mobile view) this is still being developed as I regained functionality of buttons 4-9 however the top buttons (1-3) don't seem to like being pressed on a mobile, I suspect this is something with the eventhandlers and will be looking into it. 
 
 As much as this module has severly impacted my motivation to continue and my mental health in general, I am trying to see this for the massive learning curve that it is.. Review me with the upmost Generosity and Pity X'D
+
+## Second Submission
+
+So as you can see from the first submission reflection, I have changed and improved alot of this website and fixed all of the issues I was dealing with, I have changed from template grid layouts to flexbox and using this project as a reflection I am unlikely to use grid layouts again as it is much too rigid and flexbox is able to achieve the same output with a little more CSS adjustments. It is safe to say this project has been alot more work than I originally expected when I chose this, However this was mainly due to Mental Health reducing my motivation to get anything done even when I wanted to, and my own errors in choice of layouts and Styles. I have learnt more from this project and I'm looking forward to pushing through the next one! 
 
 [Back to Top](#square-memory-game)
